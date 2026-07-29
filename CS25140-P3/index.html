@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invento 2026 - College Tech Fest Invitation</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              flower: ['Parisienne', 'cursive'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .bg-dots {
+        background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#220018] text-pink-50 min-h-screen flex flex-col justify-between relative overflow-x-hidden antialiased bg-dots">
+
+    <!-- Glow -->
+    <div class="absolute -top-32 -left-32 w-[520px] h-[520px] rounded-full bg-pink-400/50 blur-[180px]"></div>
+    <div class="absolute -bottom-32 -right-32 w-[520px] h-[520px] rounded-full bg-fuchsia-400/50 blur-[180px]"></div>
+
+    <div id="main-canvas" class="flex-1 flex flex-col justify-between py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full">
+      <header class="text-center mt-8">
+        <div id="college-tag" class="inline-block mb-3">
+          <span class="text-xs md:text-sm font-bold tracking-[0.35em] uppercase text-pink-200">
+            SB JAIN NAGPUR
+          </span>
+        </div>
+
+        <div id="fest-title">
+          <h1 class="font-flower text-6xl md:text-9xl text-transparent bg-clip-text bg-gradient-to-r from-pink-100 via-pink-300 to-fuchsia-300 drop-shadow-[0_0_35px_rgba(255,120,220,.9)]">
+            INVENTO 2026
+          </h1>
+        </div>
+
+        <div id="fest-tagline" class="mt-5">
+          <p class="text-pink-100/80 text-base md:text-lg tracking-wide">
+            Annual National Level Technical Festival
+          </p>
+        </div>
+      </header>
+
+      <section id="invite-desc" class="text-center my-10 max-w-2xl mx-auto">
+        <p class="text-lg text-pink-100/90 leading-relaxed">
+          We cordially invite tech enthusiasts, developers, builders, and faculty from all streams to join us for a three-day celebration of technology, competitive innovation, and tech exhibits.
+        </p>
+      </section>
+
+      <section id="event-grid" class="my-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div id="card-1" class="bg-white/10 backdrop-blur-2xl border border-pink-300/30 rounded-3xl p-6 shadow-2xl hover:border-pink-200 hover:shadow-[0_0_45px_rgba(255,90,210,.8)] hover:-translate-y-2 transition duration-300">
+            <span class="text-3xl">💻</span>
+            <h3 class="text-xl font-bold text-pink-100 mt-4 mb-3">Mega Hackathon</h3>
+            <p class="text-pink-100/70 text-sm leading-relaxed">
+              24-hour building sprint to solve critical global challenges with hardware & software projects.
+            </p>
+          </div>
+
+          <div id="card-2" class="bg-white/10 backdrop-blur-2xl border border-pink-300/30 rounded-3xl p-6 shadow-2xl hover:border-pink-200 hover:shadow-[0_0_45px_rgba(255,90,210,.8)] hover:-translate-y-2 transition duration-300">
+            <span class="text-3xl">🤖</span>
+            <h3 class="text-xl font-bold text-pink-100 mt-4 mb-3">Robo Soccer</h3>
+            <p class="text-pink-100/70 text-sm leading-relaxed">
+              Design and calibrate custom bots to compete in our soccer arena tournament.
+            </p>
+          </div>
+
+          <div id="card-3" class="bg-white/10 backdrop-blur-2xl border border-pink-300/30 rounded-3xl p-6 shadow-2xl hover:border-pink-200 hover:shadow-[0_0_45px_rgba(255,90,210,.8)] hover:-translate-y-2 transition duration-300">
+            <span class="text-3xl">⚙️</span>
+            <h3 class="text-xl font-bold text-pink-100 mt-4 mb-3">CAD Design Arena</h3>
+            <p class="text-pink-100/70 text-sm leading-relaxed">
+              Showcase your drafting accuracy by styling complex structural assemblies on the spot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="event-venue" class="flex flex-col md:flex-row justify-center items-center gap-10 my-8">
+        <div class="flex items-center gap-4">
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-400/20 border border-pink-300/50 text-pink-200 shadow-lg shadow-pink-500/30">📅</span>
+          <div>
+            <p class="font-semibold text-pink-50">October 12-14, 2026</p>
+            <p class="text-sm text-pink-100/70">09:00 AM onwards</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-fuchsia-400/20 border border-fuchsia-300/50 text-fuchsia-200 shadow-lg shadow-fuchsia-500/30">📍</span>
+          <div>
+            <p class="font-semibold text-pink-50">Grand Campus Auditorium</p>
+            <p class="text-sm text-pink-100/70">Auditorium Wing 3 & Tech Labs</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta-buttons" class="flex flex-col sm:flex-row gap-5 justify-center mt-8">
+        <a
+          href="#"
+          id="btn-primary"
+          class="w-full sm:w-auto px-10 py-4 rounded-2xl font-bold text-white bg-gradient-to-r from-pink-300 via-fuchsia-400 to-pink-500 shadow-[0_0_45px_rgba(255,80,200,.9)] hover:scale-105 transition duration-300"
+        >
+          Register Now
+        </a>
+        <a
+          href="#"
+          id="btn-secondary"
+          class="w-full sm:w-auto px-10 py-4 rounded-2xl border border-pink-300/40 text-pink-100 bg-white/5 backdrop-blur-lg hover:bg-pink-300/20 hover:border-pink-200 transition duration-300"
+        >
+          Download Brochure
+        </a>
+      </section>
+    </div>
+
+    <footer class="py-6 text-center border-t border-pink-500/20 bg-[#2b001e] text-pink-200/50 text-sm">
+      College Technical Festival 2026 Invitation Page
+    </footer>
+  </body>
+</html>
